@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Code Review Assistant 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered code review tool that provides instant feedback on your code. Built with React, Vite, and CodeLlama.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
+- 💡 Instant AI code reviews
+- 🎨 Beautiful dark/light theme UI
+- ✨ Real-time code editing
+- 📝 Markdown-rendered feedback
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+- React + TypeScript + Vite
+- Tailwind CSS + shadcn/ui
+- CodeMirror for editing
+- CodeLlama for AI analysis
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Quick Start
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
+1. Paste your code in the editor
+2. Click "Review"
+3. Get instant AI feedback
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Built with ❤️ using CodeLlama and React
