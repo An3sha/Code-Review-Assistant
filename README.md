@@ -2,7 +2,9 @@
 
 An AI-powered code review tool that provides instant feedback on your code. Built with React, Vite, and CodeLlama.
 
+## Demo
 
+- <img src="./src/app.png" width="30%">
 
 ## Features
 - 💡 Instant AI code reviews
